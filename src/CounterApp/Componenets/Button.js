@@ -27,8 +27,9 @@ const Button = ({ setCounter, counter }) => {
   const resetButton = () => {
     setCounter(30);
     setStartCounter(false);
+    console.log(startCounter);
   };
-  console.log(startCounter);
+  
   return (
     <div>
       <button onClick={startButton}>{startCounter ? "pause" : "start"}</button>
